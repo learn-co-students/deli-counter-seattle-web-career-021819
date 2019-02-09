@@ -14,7 +14,7 @@ def line(array)
   else 
     line_statement = "The line is currently:"
     array.each_with_index do |name, index| 
-    line_statement += " #{index.to_i+1}. #{name}"
+    line_statement += " #{index+1}. #{name}"
   end 
   puts "#{line_statement}"
   end
